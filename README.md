@@ -1,3 +1,5 @@
+[English](README.md) | [Русский](README-RU.md)
+---
 # android-module-symvers-generator
 A utility for reconstructing the Module.symvers file directly from compiled .ko (kernel object) files. This tool is specifically designed for building modules and porting Android kernels, especially when working with modern partition structures (A/B architecture, vendor_boot).
 
