@@ -39,6 +39,15 @@ python3 extract_symvers.py --scan /path/to/firmware_extracted > Module.symvers
 ```
 Пример: Сканирование распакованного дерева ядра Android (например, TECNO), содержащего сотни .ko файлов, успешно генерирует файл Module.symvers с тысячами валидных записей.
 
+Для TECNO LJ9 (сгенерированный результат уже приложен рядом,
+`Module.symvers.generated`, **5545 записей**, построено по всем 499
+`.ko` из `system_dlkm/`, `vendor_dlkm/`, `vendor_ramdisk/`):
+
+```bash
+python3 extract_symvers.py --scan /path/to/android_device_TECNO_LJ9-kernel/ \
+    > Module.symvers
+```
+
 ### Как это работает технически
 
 Каждая запись в секции __versions занимает ровно 64 байта:
