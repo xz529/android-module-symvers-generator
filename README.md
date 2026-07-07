@@ -56,6 +56,9 @@ struct modversion_info {
 ```
 To avoid objcopy failures on ARM64, the script safely reads the section using readelf -x __versions <file>. It parses the 64-byte entries and, for each used symbol, searches all provided .ko files for the module that actually exports it (using the global symbol table via nm).
 
+## Compatibility
+The script relies on standard Linux kernel data structures (ELF/Modversions), making it theoretically compatible with any platform (MediaTek, Qualcomm, Samsung Exynos). It has been successfully tested on MediaTek devices. If you have used it on other chipsets, please let us know (open an Issue or join the discussions)!
+
 ### Limitations (Honest disclosure)
  * **Does not distinguish between EXPORT_SYMBOL and EXPORT_SYMBOL_GPL**: The script writes EXPORT_SYMBOL for all lines. This only affects license compatibility checks during the build (MODULE_LICENSE), not the CRC hash matching. Your module will compile and load without issues.
  * **Skips unused symbols**: Symbols that are exported but NOT used by any other .ko file in the same firmware are not included in the resulting file. Extracting their CRCs would require complex parsing of __kcrctab by offsets, which is not implemented (and rarely required, as it usually only concerns test modules).
