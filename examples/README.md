@@ -1,5 +1,6 @@
 # Examples / Примеры
 English | Русский
+
 <a name="english"></a>
 # English
 This directory contains a sample Module.symvers file generated for the **Tecno Pova 7 Ultra** smartphone (kernel **6.1.145**).
@@ -13,7 +14,6 @@ You can use this file to ensure that your build system correctly recognizes kern
 ```makefile
 # Example of integration in Makefile
 KBUILD_EXTRA_SYMBOLS := $(CURDIR)/examples/Module.symvers
-
 ```
 
 <a name="русский"></a>
@@ -29,5 +29,4 @@ KBUILD_EXTRA_SYMBOLS := $(CURDIR)/examples/Module.symvers
 ```makefile
 # Пример подключения в Makefile
 KBUILD_EXTRA_SYMBOLS := $(CURDIR)/examples/Module.symvers
-
 ```
