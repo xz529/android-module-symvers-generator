@@ -36,6 +36,15 @@ python3 extract_symvers.py --scan /path/to/firmware_extracted > Module.symvers
 ```
 *Example: Scanning an unpacked Android kernel tree (e.g., TECNO) containing hundreds of .ko files successfully generates a Module.symvers file with thousands of valid entries.*
 
+For TECNO LJ9 (the generated result is already attached,
+`Module.symvers.generated`, **5545 entries**, built using all 499
+`.ko` from `system_dlkm/`, `vendor_dlkm/`, `vendor_ramdisk/`):
+
+```bash
+python3 extract_symvers.py --scan /path/to/android_device_TECNO_LJ9-kernel/ \
+    > Module.symvers
+```
+
 ### Technical details
 Each entry in the __versions section occupies exactly 64 bytes:
 ```c
