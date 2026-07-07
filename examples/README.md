@@ -1,5 +1,7 @@
 # Examples / Примеры
-English | Русский
+[English](#english) | [Русский](#русский)
+
+---
 
 <a name="english"></a>
 # English
