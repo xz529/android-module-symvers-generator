@@ -15,6 +15,7 @@ You can use this file to ensure that your build system correctly recognizes kern
 KBUILD_EXTRA_SYMBOLS := $(CURDIR)/examples/Module.symvers
 
 ```
+
 <a name="русский"></a>
 # Русский
 Эта директория содержит демонстрационный файл Module.symvers, сгенерированный для смартфона **Tecno Pova 7 Ultra** (ядро **6.1.145**).
