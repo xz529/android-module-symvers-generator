@@ -5,11 +5,13 @@
 
 <a name="english"></a>
 # English
-This directory contains a sample Module.symvers file generated for the **Tecno Pova 7 Ultra** smartphone (kernel **6.1.145**).
+This directory contains a sample Module.symvers file generated for the **Tecno Pova 7 Ultra**, **Tecno Spark 9 Pro** smartphone (kernel **6.1.145** **4.19**).
 ## Contents
  * **Module.symvers**: A ready-to-use artifact obtained by scanning the firmware dump.
    * **Device**: Tecno Pova 7 Ultra.
    * **Kernel Version**: 6.1.145.
+   * **Device**: Tecno Spark 9 Pro.
+   * **Kernel Version**: 4.19.
    * **Purpose**: This file can serve as a reference for verifying the script's output or as a ready-made configuration file for setting up your build environment when developing modules for this specific kernel.
 ## How to use this example
 You can use this file to ensure that your build system correctly recognizes kernel dependencies. Add the path to this file in your Makefile:
@@ -20,11 +22,13 @@ KBUILD_EXTRA_SYMBOLS := $(CURDIR)/examples/Module.symvers
 
 <a name="русский"></a>
 # Русский
-Эта директория содержит демонстрационный файл Module.symvers, сгенерированный для смартфона **Tecno Pova 7 Ultra** (ядро **6.1.145**).
+Эта директория содержит демонстрационный файл Module.symvers, сгенерированный для смартфона **Tecno Pova 7 Ultra** и **Tecno Spark 9 Pro** (ядро **6.1.145** **4.19**).
 ## Содержимое
  * **Module.symvers**: Готовый артефакт, полученный путем сканирования дампа прошивки.
    * **Устройство**: Tecno Pova 7 Ultra.
    * **Версия ядра**: 6.1.145.
+   * **Устройство**: Tecno Spark 9 Pro.
+   * **Версия ядра**: 4.19.
    * **Назначение**: Может быть использован в качестве эталона для проверки работы скрипта или как готовый файл для настройки окружения компиляции при разработке модулей под данное ядро.
 ## Как использовать этот пример
 Вы можете использовать этот файл, чтобы убедиться, что ваша система сборки корректно подхватывает зависимости. Укажите путь к этому файлу в вашем Makefile:
